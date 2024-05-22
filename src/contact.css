@@ -1,0 +1,117 @@
+.main4 {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+    height: 100vh;
+    
+        height: 90vh;
+       
+   
+   
+}
+
+.header4 {
+    text-align: center;
+ margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.bottom4 {
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left4 {
+    width: 50%;
+    padding: 10px 35px;
+    margin-left: 3vh;
+    
+}
+
+.texts h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, rgb(225, 39, 225), rgb(255, 166, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.texts h5 {
+    font-size: 1em;
+    line-height: 1.6;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+}
+
+.contacts {
+    margin-top: 20px;
+}
+
+.email,
+.phone,
+.location {
+    display: flex;
+    align-items: center;
+    
+}
+
+.email p,
+.phone p,
+.location p {
+    margin-right: 10px;
+}
+
+.right4 {
+    width: 40%;
+}
+
+.name,
+.Email {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.name input,
+.Email input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+}
+.msg{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    height: 200px;
+    position: relative;
+
+}
+.msg::placeholder{
+    position: absolute;
+    top: 5%;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

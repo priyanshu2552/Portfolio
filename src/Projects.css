@@ -1,0 +1,116 @@
+
+body { 
+    background-color: black;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+   
+   
+}
+
+.Projects {
+    padding-top: 80px; 
+   
+}
+
+.header3 h1{
+    margin-bottom: 20px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Cards {
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    max-width: 960px; 
+    margin: 0 auto;
+}
+
+.Card {
+    flex: 0 0 30%; 
+    max-width: 30%; 
+    height: 200px;
+    background-color: #000000;
+    border: 1px solid #74006b;
+    border-radius: 8px;
+    padding-top: 5px;
+    margin: 10px;
+    margin-bottom: 0;
+    box-shadow: 0 3px 5px #7c2a2a;
+    transition: transform 0.2s; 
+    box-sizing: border-box; 
+    overflow: hidden; 
+    position: relative; 
+    z-index: 0;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    text-align: left; 
+    padding-left: 10px;
+
+}
+
+.Card::before {
+    content: "";
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#84008e , #9e0000 );
+    transition:  0.7s;
+    z-index: -1;
+}
+
+.Card:hover::before {
+    top: 0;
+ 
+}
+
+.Card:hover {
+    transform: scale(1.05);
+}
+.Card h2 {
+    margin-bottom: 5px; 
+}
+
+.Card h1 {
+    font-size: 1.8em;
+    font-weight: 900;
+    margin: 2px 0; /* Adjust margin to remove extra space */
+    background: linear-gradient(to right, rgb(103, 0, 103), rgb(248, 161, 1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    z-index: 1;
+}
+
+.Card p {
+    font-size: 1em;
+    margin: 7px 0; /* Adjust margin for spacing */
+    z-index: 1;
+}
+
+.Card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red; 
+    background-image: linear-gradient(to right, rgb(99, 1, 114), rgb(255, 0, 0));
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    z-index: 1;
+    margin-top: 14px;
+}
+
+.Card a:hover {
+  
+    z-index: 1;
+}

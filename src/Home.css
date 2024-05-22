@@ -1,0 +1,151 @@
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 5vh;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(7, 226, 230);
+    position: sticky;
+    top: 0;
+    
+
+    z-index: 1000; 
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 50px;
+    cursor: pointer;
+    position: relative;
+    color: aqua;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.nav-links li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links li:hover::after {
+    width: 50%;
+}
+
+
+.contact-button {
+    background-color: red; 
+    background-image: linear-gradient(to right, rgb(99, 1, 114), rgb(255, 0, 0));
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    height: z;
+}
+
+#img1 {
+    margin-top: 10px;
+    height: 250px;
+    border-radius: 200px;
+
+}
+
+.main h1 {
+    
+    text-align: center;
+    width: 70%;
+   
+    font-size: 3rem;
+    line-height: 1.5;
+    background: linear-gradient(to right, rgb(103, 0, 103), rgb(248, 161, 1)); 
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent; 
+   
+}
+
+
+.main p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    width: 70%;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.first, .second {
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.first {
+    background-color: red; 
+    background-image: linear-gradient(to right, rgb(99, 1, 114), rgb(255, 0, 0));
+    border: none;
+    color: white;
+}
+
+.second {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.first:hover, .second:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
